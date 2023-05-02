@@ -1,0 +1,29 @@
+.contato-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 240px;
+  gap: 10px;
+}
+
+.contato-title {
+  font-size: 2.25rem;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.contato-title span {
+  color: #4d4090;
+}
+
+.contato-dados {
+  margin-top: 100px;
+}
+
+.contato-dados h2 {
+  color: #404040;
+  margin-bottom: 20px;
+}
+
+.contato-endereco p {
+  margin-bottom: 20px;
+}
