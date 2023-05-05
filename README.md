@@ -1,9 +1,12 @@
 # Projetos e Exercicios em PHP
 
-Projetos e exercicios realizados utilizando PHP.
+Projetos realizados em PHP aprendidos no curso de PHP da [Udemy.](https://www.udemy.com/course/php-do-zero-a-maestria-com-projetos-incriveis/)
 
 ## Tecnologias:
 
 ![PHP](https://img.shields.io/badge/php-%2320232a.svg?style=for-the-badge&logo=php&logoColor=%)
-![HTML](https://img.shields.io/badge/html-%2320232a.svg?style=for-the-badge&logo=html5&logoColor=%e34f26)
 ![CSS](https://img.shields.io/badge/css-%2320232a.svg?style=for-the-badge&logo=css3&logoColor=%2361dafb)
+
+## Certificados:
+
+[![PHP](https://img.shields.io/badge/php-%2320232a.svg?style=for-the-badge&logo=php&logoColor=%)](https://)
