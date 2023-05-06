@@ -7,7 +7,7 @@
   margin: 15px 0 30px;
 }
 
-/* Home */
+/* HOME */
 #contacts-table {
   max-width: 800px;
   margin: 0 auto;
@@ -63,4 +63,34 @@
   max-width: 500px;
   margin: 0 auto;
   margin-top: 30px;
+}
+
+/* SHOW / CONTATO INDIVIDUAL */
+#view-contact-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+/* BOTÃO VOLTAR */
+#back-link-container {
+  display: block;
+  width: 500px;
+  margin: 30px auto 0;
+}
+
+#back-link {
+  border: 1px solid #007bff;
+  color: #007bff;
+  border-radius: 4px;
+  text-decoration: none;
+
+  padding: 5px;
+}
+
+#back-link:hover {
+  text-decoration: none;
 }
