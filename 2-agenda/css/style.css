@@ -1,0 +1,66 @@
+.navbar-brand img {
+  width: 50px;
+}
+
+#main-title {
+  text-align: center;
+  margin: 15px 0 30px;
+}
+
+/* Home */
+#contacts-table {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#contacts-table thead {
+  color: #fff;
+  background-color: #007bff;
+}
+
+.col-id {
+  font-weight: 700;
+}
+
+.actions {
+  text-align: right;
+  width: 150px;
+}
+
+.actions i {
+  font-size: 1.125rem;
+  margin-right: 5px;
+}
+
+.ckeck-icon {
+  color: #1e7e34;
+}
+
+.edit-icon {
+  color: #007bff;
+}
+
+.delete-icon {
+  color: #bd2130;
+}
+
+.delete-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+#empty-list-text {
+  text-align: center;
+}
+
+#msg {
+  color: #155724;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  padding: 10px;
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
