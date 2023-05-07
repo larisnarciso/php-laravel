@@ -13,7 +13,7 @@ Projeto Movie Star, criado utilizando PHP e Design Patterns DAO. O usuário pode
 
 ## Diagrama Relacional
 
-![Diagrama Relacional](bd/bd.png)
+![Diagrama Relacional](database/bd.png)
 
 ## Tecnologias
 
