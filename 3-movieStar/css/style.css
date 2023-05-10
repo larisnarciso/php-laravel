@@ -111,15 +111,16 @@
 
 .card-btn {
   color: black;
+  font-weight: 500;
+  text-transform: uppercase;
   background-color: #f5c518;
   border: 2px solid #f5c518;
   width: 100%;
 }
 
 .card-btn:hover {
-  background-color: transparent;
-  color: #f5c518;
-  border-color: #f5c518;
+  background-color: #daaa20;
+  border-color: #daaa20;
 }
 
 /* Footer */
