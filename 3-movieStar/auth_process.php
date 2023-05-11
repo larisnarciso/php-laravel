@@ -15,9 +15,9 @@
   // Verificação dotipo do formulario
   if ($type === "register"){
 
-    $email = filter_input(INPUT_POST, "email");
     $name = filter_input(INPUT_POST, "name");
     $lastname = filter_input(INPUT_POST, "lastname");
+    $email = filter_input(INPUT_POST, "email");
     $password = filter_input(INPUT_POST, "password");
     $confirmpassword = filter_input(INPUT_POST, "confirmpassword");
 
@@ -47,7 +47,7 @@
 
         }else{
           // Enviar uma msg de erro, usuário ja existe
-          $message->setMessage("Uusuário já cadastrado, tente outro e-mail.", "error", "back");
+          $message->setMessage("Usuário já cadastrado, tente outro e-mail.", "error", "back");
         }
       }else{
         // Enviar uma msg de erro, de senhas diferentes
@@ -60,4 +60,20 @@
 
   }else if ($type === "login"){
 
+    $email = filter_input(INPUT_POST, "email");
+    $password = filter_input(INPUT_POST, "password");
+
+    // Tenta autenticar usuário
+    if($userDao->authenticateUser($email, $password)){
+      
+      $message->setMessage("Seja bem-vindo!", "sucess", "editprofile.php");
+      
+      // Redireciona o usuário, caso não conseguir autenticar
+    }else{
+      // Enviar uma msg de erro, de dados incorretos
+      $message->setMessage("Usuário e/ou senha incorretos", "error", "back");
+    }
+
+  } else{
+    $message->setMessage("Informações inválidas", "error", "back");
   }
