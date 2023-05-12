@@ -154,6 +154,31 @@
   width: auto;
 }
 
+/* New Movie */
+.new-movie-container {
+  text-align: center;
+}
+
+#add-movie-form {
+  text-align: left;
+}
+
+.movie-image-container {
+  height: 400px;
+  min-width: 200px;
+  background-position: center;
+  background-size: cover;
+}
+
+.page-title:after {
+  content: '';
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+  padding-top: 7px;
+  border-bottom: 2px solid #f5c518;
+}
+
 /* Footer */
 #footer {
   background-color: black;
