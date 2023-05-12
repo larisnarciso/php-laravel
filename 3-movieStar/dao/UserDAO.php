@@ -108,7 +108,7 @@
 
       if($redirect){
         // Redireciona para o perfil do usuario
-        $this->message->setMessage("Seja bem-vindo!", "sucess", "editprofile.php");
+        $this->message->setMessage("Seja bem-vindo(a)!", "sucess", "editprofile.php");
       }
       
     }
@@ -200,6 +200,16 @@
     }
 
     public function changePassword(User $user){
+      
+      $stmt = $this->conn->prepare("UPDATE users SET password = :password WHERE id = :id");
+      
+      $stmt->bindParam(":password", $user->password);
+      $stmt->bindParam(":id", $user->id);
+
+      $stmt->execute();
+
+      // Redirecionar e apresentar a mensagem de sucesso
+      $this->message->setMessage("Senha alterada com sucesso!", "sucess", "editprofile.php");
       
     }
 
