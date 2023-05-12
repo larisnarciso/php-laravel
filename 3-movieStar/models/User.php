@@ -23,7 +23,7 @@
       return password_hash($password, PASSWORD_DEFAULT);
     }
 
-    public function imageGenerateName(){
+    public function generateImageName(){
       return bin2hex(random_bytes(60)) . ".jpg";
     }
 
