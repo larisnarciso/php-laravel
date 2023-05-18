@@ -230,7 +230,8 @@
 
 .edit-profile-page .card-btn,
 #add-movie-container .card-btn,
-#review-form .card-btn {
+#review-form .card-btn,
+#edit-movie-form .card-btn {
   width: auto;
 }
 
@@ -244,10 +245,11 @@
 }
 
 .movie-image-container {
-  height: 400px;
+  height: 450px;
   min-width: 200px;
   background-position: center;
   background-size: cover;
+  border-radius: 5px;
 }
 
 .page-title:after {
