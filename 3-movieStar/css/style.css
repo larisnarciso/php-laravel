@@ -116,9 +116,9 @@
 }
 
 .movie-card .card-img-top {
-  height: 300px;
+  height: 350px;
   width: 100%;
-  background-size: conver;
+  background-size: cover;
   background-position: center;
 }
 
@@ -195,7 +195,8 @@
 }
 
 /* Edit Profile */
-#profile-image-container {
+#profile-image-container,
+.profile-image-container {
   width: 150px;
   height: 150px;
   border: 6px solid #f5c518;
@@ -203,6 +204,12 @@
   background-size: cover;
   background-position: center;
   margin: 15px auto;
+}
+
+.profile-image-container {
+  width: 70px;
+  height: 70px;
+  border: 3px solid #f5c518;
 }
 
 .page-description {
@@ -222,7 +229,8 @@
 }
 
 .edit-profile-page .card-btn,
-#add-movie-container .card-btn {
+#add-movie-container .card-btn,
+#review-form .card-btn {
   width: auto;
 }
 
@@ -249,6 +257,57 @@
   margin: 0 auto;
   padding-top: 7px;
   border-bottom: 2px solid #f5c518;
+}
+
+/* Movie */
+.movie-container {
+  text-align: center;
+}
+
+.movie-details {
+  margin: 25px 0;
+}
+
+.pipe {
+  border: 1px solid #333;
+  margin: 0 10px;
+}
+
+#reviews-title {
+  margin-bottom: 25px;
+}
+
+#review-form-container {
+  background-color: #333;
+  padding: 20px;
+}
+
+#review-form-container select,
+#review-form-container textarea {
+  width: 50%;
+}
+
+#reviews-container {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 4px solid #f5c518;
+}
+
+.review {
+  padding: 20px 0;
+  border-bottom: 1px solid #333;
+}
+
+.author-details-container {
+  padding-top: 20px;
+}
+
+.author-name a {
+  color: #f5c518;
+}
+
+.comment-title {
+  color: #999;
 }
 
 /* Dashboard */
