@@ -256,8 +256,12 @@
   text-align: right;
 }
 
-#movie-dashboard .table {
+#movies-dashboard .table {
   color: white;
+}
+
+#movies-dashboard td a {
+  text-decoration: none;
 }
 
 #movies-dashboard .table th {
