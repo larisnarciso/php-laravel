@@ -43,9 +43,6 @@
   // Resgatar as reviews do filme
   $movieReviews = $reviewDao->getMoviesReview($movie->id);
 
-  // Resgatar as reviews do filme
-  $alreadyReviewed = false;
-
 ?>
 
   <div class="container-fluid" id="main-container">
@@ -58,7 +55,7 @@
           <span class="pipe"></span>
           <span>Duração: <?= $movie->category ?></span>
           <span class="pipe"></span>
-          <span><i class="fas fa-star"></i> 9</span>
+          <span><i class="fas fa-star"></i> <?= $movie->rating ?></span>
         </p>
 
         <div class="col-md-12 col d-flex justify-content-center ">
