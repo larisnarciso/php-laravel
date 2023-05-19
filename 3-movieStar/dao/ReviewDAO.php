@@ -49,6 +49,24 @@
 
     }
 
+    // public function getMoviesReview($id){
+
+    //   $reviews = [];
+
+    //   $stmt = $this->conn->prepare("SELECT * FROM reviews WHERE movies_id = :movies_id");
+    //   $stmt->bindParam(":movies_id", $id);
+    //   $stmt->execute();
+
+    //   if($stmt->rowCount() > 0){
+    //     $reviewsData = $stmt->fetchAll();
+    //     foreach($reviewsData as $review){
+    //       $reviews[] = $this->buildReview($review);
+    //     }
+    //   }
+    //   return $reviews;
+
+    // }
+
     public function getMoviesReview($id){
 
       $reviews = [];
@@ -59,8 +77,17 @@
 
       if($stmt->rowCount() > 0){
         $reviewsData = $stmt->fetchAll();
+        $userDao = new UserDAO($this->conn, $this->url);
         foreach($reviewsData as $review){
-          $reviews[] = $this->buildReview($review);
+
+          $reviewObject = $this->buildReview($review);
+
+          // Chamar dados do usuário
+          $user = $userDao->findById($reviewObject->users_id);
+
+          $reviewObject->user = $user;
+
+          $reviews[] = $reviewObject;
         }
       }
       return $reviews;
