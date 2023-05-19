@@ -235,6 +235,47 @@
   width: auto;
 }
 
+/* Profile */
+.profile-container {
+  justify-content: center;
+}
+
+.profile-container .profile-image {
+  margin: 20px auto;
+}
+
+.profile-description {
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.about-title {
+  color: #ccc;
+}
+
+.added-movies-container,
+.about-container {
+  padding-top: 20px;
+}
+
+.about-container {
+  text-align: center;
+  background-color: #333;
+  border-bottom: 3px solid #ccc;
+}
+
+.added-movies-container {
+  background-color: #333;
+}
+
+.added-movies-container .movies-container {
+  padding: 20px;
+}
+
+.added-movies-container .movie-card {
+  width: 31%;
+}
+
 /* New Movie */
 .new-movie-container {
   text-align: center;
