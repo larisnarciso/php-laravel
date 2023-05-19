@@ -2,7 +2,11 @@
 
 ![Movie Star](moviestar.jpg)
 
-Projeto Movie Star, criado utilizando PHP e Design Patterns DAO. O usuário poderá realizar o cadastro no Movie Star, onde ele poderá adicionar e realizar reviews de filmes.
+- Autenticação de usuário
+- Criar/Editar/Visualizar perfil do usuário
+- Adicionar/Remover/Editar Filmes
+- Realizar busca por filmes
+- Avaliar filmes
 
 ## CRUD
 
@@ -18,4 +22,5 @@ Projeto Movie Star, criado utilizando PHP e Design Patterns DAO. O usuário pode
 ## Tecnologias
 
 ![PHP](https://img.shields.io/badge/php-%2320232a.svg?style=for-the-badge&logo=php&logoColor=%)
+![BOOTSTRAP](https://img.shields.io/badge/bootstrap-%2320232a.svg?style=for-the-badge&logo=bootstrap&logoColor=%)
 ![CSS](https://img.shields.io/badge/css-%2320232a.svg?style=for-the-badge&logo=css3&logoColor=%2361dafb)
