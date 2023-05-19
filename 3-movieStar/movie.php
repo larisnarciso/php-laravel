@@ -54,13 +54,19 @@
         <span><i class="fas fa-star"></i> 9</span>
       </p>
 
-      <iframe src="<?= $movie->trailer ?>" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <p><?= $movie->description ?></p>
+      <div class="col-md-12 col d-flex justify-content-center ">
+      <div class="row align-items-center">
+        <iframe class="" src="<?= $movie->trailer ?>" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      </div>
+      <div class="row justify-content-md-center p-description">
+        <p class="col col-lg-8"><?= $movie->description ?></p>
+      </div>
     </div>
-
-    <div class="col-md-3 col align-self-center">
-      <div class="movie-image-container" style="background-image: url('<?= $BASE_URL ?>img/movies/<?= $movie->image ?>')"></div>
+    <div class="row align-items-end">
+      <div class="offset-1 col-md-3 movie-image-container" style="background-image: url('<?= $BASE_URL ?>img/movies/<?= $movie->image ?>')"></div>
     </div>
+      
     <div class="offset-md-1 col-md-10" id="reviews-container">
       <h3 id="reviews-title">Avaliações:</h3>
       <!-- Verifica se habilita a review para o usuário ou não -->
