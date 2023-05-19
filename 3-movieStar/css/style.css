@@ -85,7 +85,7 @@
 #main-container {
   background-color: #0d0c0f;
   color: white;
-  min-height: 65vh;
+  min-height: 75vh;
   padding: 45px;
 }
 
@@ -446,6 +446,20 @@
 .delete-btn:hover {
   background-color: #700700;
   text-decoration: none;
+}
+
+/* Search */
+#search-title {
+  font-size: 2.5rem;
+}
+
+#search-result,
+.search-link a {
+  color: #f5c518;
+}
+
+.search-link a:hover {
+  color: #daaa20;
 }
 
 /* Footer */
