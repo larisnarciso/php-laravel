@@ -10,7 +10,7 @@ Projetos realizados em PHP aprendidos no curso de PHP da [Udemy.](https://www.ud
 Uma vez preparado o ambiente, clone este repositório:
 
 ```
-git clone https://github.com/larisnarciso/php.git
+git clone https://github.com/larisnarciso/php-laravel.git
 ```
 Coloque a pasta deste repositorio dentro da pasta `htdocs` que esta na pasta onde o XAMP foi instalado:
  - `\xampp\htdocs`
@@ -45,4 +45,4 @@ php artisan serve
 ## Certificados:
 
 [![PHP](https://img.shields.io/badge/php-%2320232a.svg?style=for-the-badge&logo=php&logoColor=%)](https://www.udemy.com/certificate/UC-e13670cf-5952-40fe-89d6-d67d82d374ae/)
-<!-- [![LARAVEL]() -->
+[![LARAVEL](https://img.shields.io/badge/laravel-%2320232a.svg?style=for-the-badge&logo=laravel&logoColor=%)]()
