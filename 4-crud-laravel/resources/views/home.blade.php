@@ -23,5 +23,8 @@
         </div>
       @endforeach
     </div>
+    <div class="pagination" align="center">
+      {{ $cursos->links() }}
+    </div>
   </div>
 @endsection
