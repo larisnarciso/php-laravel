@@ -1,10 +1,10 @@
 <div class="input-field">
-  <input type="text" name="title" value="{{isset($registro->titulo) ? $registro->titulo : ''}}">
+  <input type="text" name="titulo" value="{{isset($registro->titulo) ? $registro->titulo : ''}}">
   <label>Titulo</label>
 </div>
 
 <div class="input-field">
-  <input type="text" name="title" value="{{isset($registro->descricao) ? $registro->descricao : ''}}">
+  <input type="text" name="descricao" value="{{isset($registro->descricao) ? $registro->descricao : ''}}">
   <label>Descrição</label>
 </div>
 
@@ -33,7 +33,7 @@
 <div class="input-field">
   <p>
     <label>
-      <input type="checkbox" {{isset($registro->publicado) && $registro->publicado == 'sim' ? 'checked' : ''}} value="true"/>
+      <input type="checkbox" name="publicado" {{isset($registro->publicado) && $registro->publicado == 'sim' ? 'checked' : ''}} value="true"/>
       <span>Publicar?</span>
     </label>
   </p>
