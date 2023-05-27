@@ -1,3 +1,4 @@
+{{-- CURSOS --}}
 @extends('layout.site')
 
 @section('titulo', 'Cursos')
