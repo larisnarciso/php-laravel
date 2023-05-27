@@ -5,8 +5,8 @@
 @section('conteudo')
 	<div class="container">
     <h3 class="center">Lista de Cursos</h3>
+		@foreach($cursos as $curso)
     <div class="row">
-			@foreach($cursos as $curso)
 				<div class="col s12 m4">
 					<div class="card">
 						<div class="card-image">
