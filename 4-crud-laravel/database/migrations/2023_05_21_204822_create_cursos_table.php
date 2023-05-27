@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('titulo');
             $table->string('descricao');
-            $table->string('imagem');
+            $table->string('imagem')->default('/img/cursos/default.jpg');
             $table->decimal('valor', 5,2);
             $table->enum('publicado', ['sim','nao'])->default('nao');
             $table->timestamps();
