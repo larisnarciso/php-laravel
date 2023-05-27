@@ -13,10 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
+Route::get('/', ['as' => 'site.home', 'uses' => 'App\Http\Controllers\Site\HomeController@index']);
 Route::get('/contato/{id?}',['uses' => 'App\Http\Controllers\ContatoController@index']);
 Route::post('/contato',['uses' => 'App\Http\Controllers\ContatoController@criar']);
 Route::put('/contato',['uses' => 'App\Http\Controllers\ContatoController@editar']);
